@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		F4FAAF3529D174280030170E /* MagazineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FAAF3429D174280030170E /* MagazineApp.swift */; };
-		F4FAAF3729D174280030170E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FAAF3629D174280030170E /* ContentView.swift */; };
+		F4FAAF3729D174280030170E /* MagazineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FAAF3629D174280030170E /* MagazineView.swift */; };
 		F4FAAF3929D174290030170E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4FAAF3829D174290030170E /* Assets.xcassets */; };
 		F4FAAF3C29D174290030170E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4FAAF3B29D174290030170E /* Preview Assets.xcassets */; };
+		F4FAAF4429D1745A0030170E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4FAAF4329D1745A0030170E /* Launch Screen.storyboard */; };
+		F4FAAF4629D1827A0030170E /* infoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FAAF4529D1827A0030170E /* infoView.swift */; };
+		F4FAAF4A29D1944D0030170E /* MagazineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FAAF4929D1944D0030170E /* MagazineModel.swift */; };
+		F4FAAF4D29D1948F0030170E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FAAF4C29D1948F0030170E /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F4FAAF3129D174280030170E /* Magazine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magazine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4FAAF3429D174280030170E /* MagazineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineApp.swift; sourceTree = "<group>"; };
-		F4FAAF3629D174280030170E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F4FAAF3629D174280030170E /* MagazineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineView.swift; sourceTree = "<group>"; };
 		F4FAAF3829D174290030170E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4FAAF3B29D174290030170E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F4FAAF4329D1745A0030170E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		F4FAAF4529D1827A0030170E /* infoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoView.swift; sourceTree = "<group>"; };
+		F4FAAF4929D1944D0030170E /* MagazineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineModel.swift; sourceTree = "<group>"; };
+		F4FAAF4C29D1948F0030170E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				F4FAAF3429D174280030170E /* MagazineApp.swift */,
-				F4FAAF3629D174280030170E /* ContentView.swift */,
+				F4FAAF4329D1745A0030170E /* Launch Screen.storyboard */,
+				F4FAAF4C29D1948F0030170E /* Data.swift */,
+				F4FAAF4B29D194630030170E /* Model */,
+				F4FAAF4229D1744D0030170E /* View */,
 				F4FAAF3829D174290030170E /* Assets.xcassets */,
 				F4FAAF3A29D174290030170E /* Preview Content */,
 			);
@@ -65,6 +76,23 @@
 				F4FAAF3B29D174290030170E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F4FAAF4229D1744D0030170E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4FAAF3629D174280030170E /* MagazineView.swift */,
+				F4FAAF4529D1827A0030170E /* infoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4FAAF4B29D194630030170E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4FAAF4929D1944D0030170E /* MagazineModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4FAAF4429D1745A0030170E /* Launch Screen.storyboard in Resources */,
 				F4FAAF3C29D174290030170E /* Preview Assets.xcassets in Resources */,
 				F4FAAF3929D174290030170E /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4FAAF3729D174280030170E /* ContentView.swift in Sources */,
+				F4FAAF4629D1827A0030170E /* infoView.swift in Sources */,
+				F4FAAF4D29D1948F0030170E /* Data.swift in Sources */,
+				F4FAAF3729D174280030170E /* MagazineView.swift in Sources */,
 				F4FAAF3529D174280030170E /* MagazineApp.swift in Sources */,
+				F4FAAF4A29D1944D0030170E /* MagazineModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +302,14 @@
 				DEVELOPMENT_TEAM = 33WMDPGAG6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Magazine;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +334,14 @@
 				DEVELOPMENT_TEAM = 33WMDPGAG6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Magazine;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

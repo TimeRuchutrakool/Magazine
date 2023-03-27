@@ -11,7 +11,7 @@ import SwiftUI
 struct MagazineApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MagazineView()
         }
     }
 }
